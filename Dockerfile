@@ -1,6 +1,3 @@
-## based on haproxy dockerfile
-## https://github.com/docker-library/haproxy/blob/master/1.8/alpine/Dockerfile
-
 FROM alpine:latest
 
 ENV LOG_VERSION REL_1_2_1
