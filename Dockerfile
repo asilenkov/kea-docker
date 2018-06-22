@@ -73,10 +73,6 @@ RUN set -x \
   && apk add --virtual .kea-rundeps $runDeps \
   && apk del .build-deps
 
-RUN mkdir -p /etc/kea
-
-COPY kea-dhcp4.conf /etc/kea/
-
 COPY docker-entrypoint.sh /
 
 CMD ["/usr/local/sbin/kea-dhcp4","-c","/etc/kea/kea-dhcp4.conf"]
